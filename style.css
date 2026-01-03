@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.game-container {
+  width: 380px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.6);
+  box-shadow: 0 0 25px cyan;
+  text-align: center;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 15px cyan; }
+  to { box-shadow: 0 0 35px magenta; }
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: cyan;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, cyan, magenta);
+  color: black;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px cyan;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}

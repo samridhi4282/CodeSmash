@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeLingo 🎮</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>🎮 CodeLingo</h1>
+    <p class="tagline">Learn Python the fun way</p>
+
+    <div id="menu">
+      <h2>Select Difficulty</h2>
+      <button onclick="startGame('easy')">Easy</button>
+      <button onclick="startGame('medium')">Medium</button>
+      <button onclick="startGame('hard')">Hard</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+      <h2 id="question"></h2>
+      <input type="text" id="answer" placeholder="Your answer">
+      <button onclick="submitAnswer()">Submit</button>
+      <p id="feedback"></p>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>🏆 Game Over</h2>
+      <p id="scoreText"></p>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
