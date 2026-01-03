@@ -15,7 +15,7 @@ const questions = {
     { q: "input() returns?", a: "str" },
     { q: "Exception keyword?", a: "try" },
     { q: "len([1,2,3])?", a: "3" },
-    { q: "Loop that runs at least once?", a: "while" }
+    { q: "Which collection in python does not allow duplicate values?", a: "set" }
   ],
   hard: [
     { q: "type([])?", a: "list" },
