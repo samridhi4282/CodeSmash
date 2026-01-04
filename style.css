@@ -23,6 +23,7 @@ body {
   text-align: center;
   animation: glow 2s infinite alternate;
   transition: transform 0.5s;
+  transform-style: preserve-3d;
 }
 
 .game-container.flipped {
@@ -83,6 +84,7 @@ input {
 
 #leaderboard {
   padding: 20px;
+  transform: rotateY(180deg);
 }
 
 #leaderboard-list {
