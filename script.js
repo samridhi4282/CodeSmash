@@ -50,7 +50,7 @@ function submitAnswer() {
     score++;
     document.getElementById("feedback").innerText = "✅ Correct!";
   } else {
-    document.getElementById("feedback").innerText = "❌ Wrong!";
+    document.getElementById("feedback").innerText = `❌ Wrong! The correct answer is: ${correctAns}`;
   }
 
   document.getElementById("answer").value = "";
@@ -63,7 +63,7 @@ function submitAnswer() {
     } else {
       endGame();
     }
-  }, 800);
+  }, 2000);
 }
 
 function endGame() {
