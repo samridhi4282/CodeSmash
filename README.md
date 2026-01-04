@@ -44,8 +44,9 @@ Many beginners struggle in programming because they focus on syntax rather than 
 ## 🔮 Future Enhancements
 - Firebase-based leaderboard
 - User authentication
-- More programming languages
+- Support for additional programming languages
 - Timer-based challenges
+- A Hint and Explanation feature can be introduce
 
 🤝 **Contribution Guidelines**
      Contributions are welcome!
@@ -58,9 +59,9 @@ How to Contribute:
 5. Submit a Pull Request
 
  You may also:
-> Report bugs
-> Suggest new features
-> Improve documentation
+* Report bugs
+* Suggest new features
+* Improve documentation
 
 📄 **License Information**
 
