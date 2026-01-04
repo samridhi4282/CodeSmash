@@ -22,6 +22,11 @@ body {
   box-shadow: 0 0 25px cyan;
   text-align: center;
   animation: glow 2s infinite alternate;
+  transition: transform 0.5s;
+}
+
+.game-container.flipped {
+  transform: rotateY(180deg);
 }
 
 @keyframes glow {
@@ -55,7 +60,7 @@ button {
 
 button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px cyan;
+  box-shadow: 0 0 25px magenta;
 }
 
 input {
@@ -74,4 +79,19 @@ input {
 #feedback {
   margin-top: 10px;
   font-weight: bold;
+}
+
+#leaderboard {
+  padding: 20px;
+}
+
+#leaderboard-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#leaderboard-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

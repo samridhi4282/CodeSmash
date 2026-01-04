@@ -1,6 +1,7 @@
 let level = "";
 let score = 0;
 let index = 0;
+let leaderboard = [];
 
 const questions = {
   easy: [
@@ -73,4 +74,37 @@ function endGame() {
   let xp = score * (level === "easy" ? 10 : level === "medium" ? 15 : 25);
   document.getElementById("scoreText").innerText =
     `Score: ${score}/5 | XP Earned: ${xp}`;
+
+  const playerName = prompt("Enter your name for the leaderboard:");
+  updateLeaderboard(playerName, xp);
+}
+
+function updateLeaderboard(name, xp) {
+  leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
+  leaderboard.push({ name, xp });
+  leaderboard.sort((a, b) => b.xp - a.xp);
+  localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
+}
+
+function showLeaderboard() {
+  flipCard();
+  setTimeout(() => {
+    document.getElementById("result").classList.add("hidden");
+    document.getElementById("leaderboard").classList.remove("hidden");
+
+    const leaderboardList = document.getElementById("leaderboard-list");
+    leaderboardList.innerHTML = "";
+    leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
+
+    leaderboard.forEach(player => {
+      const li = document.createElement("li");
+      li.innerText = `${player.name} - ${player.xp} XP`;
+      leaderboardList.appendChild(li);
+    });
+  }, 500);
+}
+
+function flipCard() {
+  const gameContainer = document.querySelector(".game-container");
+  gameContainer.classList.toggle("flipped");
 }

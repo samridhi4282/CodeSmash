@@ -28,6 +28,13 @@
     <div id="result" class="hidden">
       <h2>🏆 Game Over</h2>
       <p id="scoreText"></p>
+      <button onclick="showLeaderboard()">View Leaderboard</button>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+
+    <div id="leaderboard" class="hidden">
+      <h2>Leaderboard</h2>
+      <ol id="leaderboard-list"></ol>
       <button onclick="location.reload()">Play Again</button>
     </div>
   </div>
