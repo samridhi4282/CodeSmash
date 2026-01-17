@@ -3,7 +3,7 @@ Learn Coding the Fun Way!
 
 CodeSmash is a fun and interactive quiz game designed to help beginners learn the fundamentals of Python in fun and engaging way. Players can choose difficulty levels, earn points, and climb the leaderboard!
 
->> **Tagline:** *Smash problems with logic, not memorization.*
+>> **Tagline:** **Smash problems with logic, not memorization.**
 
 ---
 
